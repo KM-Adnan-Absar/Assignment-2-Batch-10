@@ -162,11 +162,20 @@ color: rgba(239, 237, 232, 0.65);
 }
 .fitness-section{
     display: flex;
-    margin-left: 130px;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 70px;
-    margin-right: 100px;
-    text-align: center;
-    gap:30px
+  
+  }
+
+.fitness-container{
+text-align: center;           
+flex: 1;                       
+margin: 0 10px; 
+}
+.fitness-container img{
+max-width: 100%;               
+height: auto; 
 }
 
 .fitness-title ,.team-section{
@@ -210,12 +219,12 @@ color:rgba(255, 255, 255, 0.5);
 
 .run-section{
     display: flex;
+    align-items: center;
     border-radius: 20px;
     width: 800px;
     height: 300px;
-    align-items: center;
-    margin-left: 300px;
     margin-top: 80px;
+    margin-left: 250px;
     background-color:rgba(34, 34, 34, 1.00);
 
 
@@ -252,7 +261,7 @@ margin-top:-15px;
     text-align: left;
     margin-left: 350px;
     margin-top: 80px;
-   }
+  }
 .BMI-head{
     font-size: 30px;
     font-weight: 900;
@@ -500,6 +509,16 @@ nav>ul{
 flex-direction: column;
 }
 
+.fitness-title{
+  margin-left: 125px;
+}
+
+
+.fitness-container{
+  margin-top: 20px;
+  margin-left: 150px;
+ }
+
 .run-section{
     flex-direction: column;
     width: 400px;
@@ -524,18 +543,36 @@ flex-direction: column;
     height: 1180px;
     margin-left: 150px;
 }
-.meet-section{
-    margin-top: 400px;
-   
-}
-.team-section{
-    margin-left: 80px;
-}
-
 
 .BMI-container{
     flex-direction: column;
+    height: 650px;
+    width: 600px;
 }
+.BMI-table-chart{
+    padding-left: 200px;
+}
+table{
+    margin-left: 200px;
+}
+
+
+.BMI-title{
+
+    margin-left: 220px;
+    margin-top: 80px;
+    
+}
+
+.meet-section{
+    margin-top: 400px;
+}
+
+.team-section{
+   text-align: center;
+   
+}
+
 
 .footer{
 grid-template-columns:repeat(1,1fr);
